@@ -1,52 +1,38 @@
-import java.util.HashSet;
-import java.util.LinkedHashSet;
-import java.util.Set;
-import java.util.TreeSet;
+package collectionsjava;
+import java.util.*;
+public class set {
+	public static void main(String[] args) {
 
-public class LearnSet {
+        
 
-    public static void main(String[] args) {
+        
 
-        Set<Student> studentSet = new HashSet<>();
-
-        studentSet.add(new Student("Anuj", 2));
-        studentSet.add(new Student("Ramesh", 4));
-        studentSet.add(new Student("Shivam", 3));
-
-        studentSet.add(new Student("Rohit", 2));
-
-        Student s1 = new Student("Anuj", 2);
-        Student s2 = new Student("Rohit", 2);
-
-        System.out.println(s1.equals(s2));
-        System.out.println(studentSet);
-
-//        Set<Integer> set = new HashSet<>();
-//        Set<Integer> set = new LinkedHashSet<>();
-
-//        Set<Integer> set = new TreeSet<>();
+//        Set<Integer> set1 = new HashSet<>(); //Unordered Set
+       Set<Integer> set1 = new LinkedHashSet<>(); //Sequenced Set
 //
-//        set.add(32);
-//        set.add(2);
-//        set.add(54);
-//        set.add(21);
-//        set.add(65);
-//
-//        System.out.println(set);
-//
-//        set.remove(54);
-//
-//        System.out.println(set);
-//
-//        System.out.println(set.contains(21));
-//
-//        System.out.println(set.isEmpty());
-//
-//        System.out.println(set.size());
-//
-//        set.clear();
-//
-//        System.out.println(set);
+//       Set<Integer> set1 = new TreeSet<>();//Ordered Set
+       
+        set1.add(32);
+        set1.add(2);
+        set1.add(54);
+        set1.add(21);
+        set1.add(65);
 
+        System.out.println(set1);
+
+        set1.remove(54);
+
+        System.out.println(set1);
+
+        System.out.println(set1.contains(21));
+
+        System.out.println(set1.isEmpty());
+
+        System.out.println(set1.size());
+
+        set1.clear();
+
+        System.out.println(set1);
+//
     }
 }
