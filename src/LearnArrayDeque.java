@@ -1,8 +1,7 @@
-import java.util.ArrayDeque;
-
-public class LearnArrayDeque {
-
-    public static void main(String[] args) {
+package collectionsjava;
+import java.util.*;
+public class deque {
+	public static void main(String[] args) {
 
         ArrayDeque<Integer> adq = new ArrayDeque<>();
 
@@ -25,7 +24,5 @@ public class LearnArrayDeque {
 
         System.out.println(adq.pollLast());
         System.out.println("pollLast() " +adq);
-
-    }
-
+	}
 }
